@@ -1,0 +1,5 @@
+E:\prog\Boltproject\Boltproject\obj\Debug\Boltproject.csproj.AssemblyReference.cache
+E:\prog\Boltproject\Boltproject\obj\Debug\MainWindow.g.cs
+E:\prog\Boltproject\Boltproject\obj\Debug\App.g.cs
+E:\prog\Boltproject\Boltproject\obj\Debug\Boltproject_MarkupCompile.cache
+E:\prog\Boltproject\Boltproject\obj\Debug\Boltproject_MarkupCompile.lref
