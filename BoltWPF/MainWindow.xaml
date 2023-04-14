@@ -1,0 +1,97 @@
+﻿<Application x:Class="BoltWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+</Application>
+<Window x:Class="BoltWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:Kisbolt.ViewModel"
+        Title="Kisbolt"
+        Height="450"
+        Width="800">
+    <Window.DataContext>
+        <vm:ViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Exit"
+                          Command="{Binding ExitCommand}" />
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TabControl>
+                <TabItem Header="Termékek">
+                    <StackPanel>
+                        <DataGrid ItemsSource="{Binding TermekLista}"
+                                  AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Azonosító"
+                                                    Binding="{Binding Azonosito}" />
+                                <DataGridTextColumn Header="Név"
+                                                    Binding="{Binding Nev}" />
+                                <DataGridTextColumn Header="Darabszám"
+                                                    Binding="{Binding Darabszam}" />
+                                <DataGridTextColumn Header="Szavatossági idő"
+                                                    Binding="{Binding SzavatossagiIdo}" />
+                                <DataGridTextColumn Header="Lejárt szavatosságú"
+                                                    Binding="{Binding LejartSzavatossagu}" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <DataGrid.Columns>
+                                <DataGridTextColumn Header="Azonosító"
+                                                 Binding="{Binding Azonosito}" />
+                                <DataGridTextColumn Header="Név"
+                                                 Binding="{Binding Nev}" />
+                                <DataGridTextColumn Header="Születési idő"
+                                                 Binding="{Binding SzuletesiIdo}" />
+                                <DataGridTextColumn Header="Nem"
+                                                 Binding="{Binding Nem}" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Új eladó felvétele"
+                             Margin="0 10 0 0"
+                             Command="{Binding EladoHozzaadasaParancs}" />
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+            <StackPanel Grid.Column="1"
+                     Margin="10"
+                     Orientation="Vertical">
+                <Label Content="Új termék felvétele"
+                    FontWeight="Bold"
+                    Margin="0 0 0 10" />
+                <Label Content="Azonosító:" />
+                <TextBox Text="{Binding UjTermekAzonosito}" />
+                <Label Content="Név:" Margin="0 10 0 0" />
+                <TextBox Text="{Binding UjTermekNev}" />
+                <Label Content="Darabszám:" Margin="0 10 0 0" />
+                <TextBox Text="{Binding UjTermekDarabszam}" />
+                <Label Content="Szavatossági idő:" Margin="0 10 0 0" />
+                <DatePicker SelectedDate="{Binding UjTermekSzavatossagiIdo}" />
+                <Button Content="Hozzáadás"
+                     Margin="0 10 0 0"
+                     Command="{Binding TermekHozzaadasaParancs}" />
+                <Label Content="Értékesítés"
+                    FontWeight="Bold"
+                    Margin="0 20 0 10" />
+                <Label Content="Azonosító:" />
+                <TextBox Text="{Binding EladandoTermekAzonosito}" />
+                <Label Content="Darabszám:" Margin="0 10 0 0" />
+                <TextBox Text="{Binding EladandoTermekDarabszam}" />
+                <Button Content="Eladás"
+                     Margin="0 10 0 0"
+                     Command="{Binding TermekEladasaParancs}" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

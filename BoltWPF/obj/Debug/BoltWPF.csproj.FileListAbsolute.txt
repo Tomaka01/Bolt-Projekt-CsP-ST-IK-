@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\bin\Debug\BoltWPF.exe.config
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\bin\Debug\BoltWPF.exe
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\bin\Debug\BoltWPF.pdb
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\BoltWPF.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\MainWindow.g.cs
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\App.g.cs
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\BoltWPF_MarkupCompile.cache
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\BoltWPF_MarkupCompile.lref
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\MainWindow.baml
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\BoltWPF.g.resources
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\BoltWPF.Properties.Resources.resources
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\BoltWPF.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\BoltWPF.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\BoltWPF.exe
+C:\Users\PC\source\repos\BoltWPF\BoltWPF\obj\Debug\BoltWPF.pdb
