@@ -1,4 +1,4 @@
-﻿<Window x:Class="BoltWPF.MainWindow"
+﻿<Window x:Name="Window" x:Class="BoltWPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -13,11 +13,10 @@
 
         <StackPanel Orientation="Horizontal" Margin="0,0,0,375" Grid.RowSpan="2" Background="#FFC95C5C">
             <Button x:Name="UjTermek" Content="Új termék" Click="UjTermek_Click" Margin="5" Background="White"/>
-            <Button Content="Új eladó" Click="UjElado_Click" Margin="5" Background="White"/>
-            <Button Content="Szavatossági idő lekérdezése" Click="SzavatossagiIdoLekerdezese_Click" Margin="5" Background="White"/>
-            <Button Content="Értékesítés" Click="Ertekesites_Click" Margin="5" Background="White"/>
+            <Button x:Name="UjElado" Content="Új eladó" Click="UjElado_Click" Margin="5" Background="White"/>
+            <Button x:Name="SzavatossagiIdoLekerdezese" Content="Szavatossági idő lekérdezése" Click="SzavatossagiIdoLekerdezese_Click" Margin="5" Background="White"/>
+            <Button x:Name="Ertekesites" Content="Értékesítés" Click="Ertekesites_Click" Margin="5" Background="White"/>
         </StackPanel>
-
-        <ListBox x:Name="EredmenyLista" Grid.Row="1" Margin="10,91,369,55"/>
+        <Label x:Name="eredmenylista" Content="" HorizontalAlignment="Left" Margin="23,76,0,0" Grid.Row="1" VerticalAlignment="Top" Height="288" Width="425"/>
     </Grid>
 </Window>
